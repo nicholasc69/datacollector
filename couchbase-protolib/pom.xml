@@ -31,6 +31,7 @@
 
   <properties>
     <couchbase.version>2.7.4</couchbase.version>
+    <couchbase.dcp.version>0.23.0</couchbase.dcp.version>
     <couchbaseencryptionextension.version>1.0.0</couchbaseencryptionextension.version>
   </properties>
 
@@ -51,6 +52,11 @@
       <artifactId>encryption</artifactId>
       <version>${couchbaseencryptionextension.version}</version>
     </dependency>
+    <dependency>
+      <groupId>com.couchbase.client</groupId>
+      <artifactId>dcp-client</artifactId>
+      <version>${couchbase.dcp.version}</version>
+      </dependency>
     <dependency>
       <groupId>com.streamsets</groupId>
       <artifactId>streamsets-datacollector-api</artifactId>
